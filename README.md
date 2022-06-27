@@ -1,6 +1,6 @@
 # finalCoder
 Entrega final realizada para el curso de Python en la plataforma de CoderHouse. Realizado por Agustin Fassetta, Agustin Pelle y Agustin Neme.
-# Entrega1_NemePelleFassetta
+# FinalCoder
 # Primer entrega del proyecto final:
 
 Esta es la primera entrega realizada para la plataforma CoderHouse en su curso de Python, este codigo contiene:
@@ -65,18 +65,18 @@ $ pip install django-bootstrap-v5
 
 En Windows: 
 
-C:\> git clone https://github.com/agusneme/Entrega1_NemePelleFassetta.git
+C:\> git clone https://github.com/agusneme/FinalCoder.git
 
 En Linux/Mac:
 
-$ git clone https://github.com/agusneme/Entrega1_NemePelleFassetta.git
+$ git clone https://github.com/agusneme/FinalCoder.git
 
 ## Correr el Servidor
 
 Los siguientes comandos son analogos en Mac/Linux/Windows:
 
 ```bash
-cd Entrega1_NemePelleFassetta
+cd FinalCoder
 python manage.py migrate
 ```
 La consola mostrara las migraciones de la base de datos que se realizaron.
