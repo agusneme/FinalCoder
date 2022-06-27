@@ -6,13 +6,14 @@
 
 {# Display django.contrib.messages as Bootstrap alerts #}
 {% bootstrap_messages %}
-
+{% load static %}
+<html>
 <head>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <link rel="stylsheet" type="text/css" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="{% static 'blogs/css/listas.css' %}">
     <div class="container-fluid justify-content-between">
       <div class="d-flex">
-        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="">
           <img
             src="https://i.postimg.cc/Z5FDD5vZ/pngwing-com.png"
             height="80"
@@ -113,5 +114,16 @@
     {% endfor %}
 {% else %}
 
-  <h1> No hay blogs</h1>
+  <h1> No hay actividades subidas</h1>
 {% endif %}
+<body>
+</body>
+<footer><footer class="bg-dark text-center text-white">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(171, 185, 192, 0.603);">
+    © 2022 Copyright:
+    <a class="text-white" </a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</html>

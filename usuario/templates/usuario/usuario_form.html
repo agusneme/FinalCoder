@@ -1,4 +1,23 @@
-<a href="{% url 'blogs_listas' %}">Retroceder </a>
+{% load bootstrap5 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link type="text/css" rel="stylesheet" href="{% static 'blogs/css/model.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="{% url 'blogs_listas' %}">Retroceder </a>
 
 <form method="post">
     {% csrf_token %}
@@ -6,3 +25,8 @@
 
     <input type="submit" value="Guardar">
 </form>
+</body>
+
+</html>
+
+

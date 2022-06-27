@@ -1,0 +1,11 @@
+div {
+    text-align: center;
+    width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid rgb(37, 182, 85);
+	border-radius:5px;
+	display:block;
+	color:rgb(0, 0, 0);
+	background-color:rgb(132, 216, 83);
+}
