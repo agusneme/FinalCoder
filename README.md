@@ -71,6 +71,10 @@ En Linux/Mac:
 
 $ git clone https://github.com/agusneme/FinalCoder.git
 
+## Requirements
+
+pip install -r requirements.txt
+
 ## Correr el Servidor
 
 Los siguientes comandos son analogos en Mac/Linux/Windows:
