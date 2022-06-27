@@ -1,0 +1,102 @@
+{% load bootstrap5 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+<head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <link rel="stylsheet" type="text/css" href="css/style.css" />
+    <div class="container-fluid justify-content-between">
+      <div class="d-flex">
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+          <img
+            src="https://i.postimg.cc/Z5FDD5vZ/pngwing-com.png"
+            height="80"
+            alt="MDB Logo"
+            loading="lazy"
+            style="margin-top: -10px;"
+          />
+        </a>
+        
+        <ul class ="nav navbar-nav">
+          <li class ="nav-item">
+            <a href="{%url  'blogs_consignas' %}" class="btn btn-lg btn-default">Profesor, cree una nueva actividad</a>
+          </li>
+
+          <li class ="nav-item">
+            <a href="{% url 'blogs_crear' %}" class="btn btn-lg btn-default">Alumno, entregue su tarea</a>
+          </li>
+
+          <li class ="nav-item">
+            <a href="{% url 'blogs_listas2' %}" class="btn btn-lg btn-default">Vea las actividades subidas</a>
+          </li>
+
+          <li class ="nav-item">
+            <a href="{% url 'blogs_listas' %}" class="btn btn-lg btn-default">Vea las tareas subidas</a>
+          </li>
+
+          <li class ="nav-item">
+            <a href="{% url 'about' %}" class="btn btn-lg btn-default">About</a>
+          </li>
+          
+          </ul>
+      </div>
+
+
+      
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link d-sm-flex align-items-sm-center">
+            <img>
+            <strong class="d-none d-sm-block ms-1">{{user.username}}</strong> </a> 
+            <img height="50" src="{{ user.avatar_set.first.image.url }}" />
+          </a>
+        </li>
+        <li class="nav-item me-3 me-lg-1">
+          <a class="nav-link" href="#">
+            <span><i class="fas fa-plus-circle fa-lg"></i></span>
+          </a>
+        </li>
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a
+            class="nav-link  hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-comments fa-lg"></i>
+            <a class="btn btn-outline-secondary" href="{% url 'usuario_editar' user.id %}"> Config </a><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png" alt="" height="23"></button>
+          
+          </a>
+        </li>
+        <li class="nav-item dropdown me-3 me-lg-1">
+          <a
+            class="nav-link  hidden-arrow"
+            href="/"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bell fa-lg"></i>
+            <a class="btn btn-outline-secondary" href="{% url 'blogs_desconectar' %}"> Logout </a>
+
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuLink"
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+</head>
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, impedit explicabo voluptate adipisci amet soluta unde dolores laboriosam animi repudiandae asperiores consequatur ullam, temporibus eaque, ipsa cumque accusantium nulla dolore.
