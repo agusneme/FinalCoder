@@ -1,4 +1,4 @@
-{% load bootstrap5 %}
+{% load django_bootstrap5 %}
 
 {# Load CSS and JavaScript #}
 {% bootstrap_css %}
@@ -27,7 +27,11 @@
     <li>Nombre de Usuario: {{object.username}}</li>
 </ul>
 
-<img height="128" src="{{ object.avatar_set.first.image.url }}" />
+{% if user.avatar_set.first.image.url %}
+<img class="card-img" height="50" src="{{ user.avatar_set.first.image.url }}" />
+{% else %}
+<img class="card-img" height="" width="" src="{% static 'blogs/css/default.png' %}" />
+{% endif %}
 </body>
 
 </html>

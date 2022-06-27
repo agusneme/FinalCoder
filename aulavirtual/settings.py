@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'bootstrap5',
+    'django_bootstrap5',
     'usuario.apps.UsuarioConfig',
     'blogs.apps.BlogsConfig',    
     'django.contrib.admin',

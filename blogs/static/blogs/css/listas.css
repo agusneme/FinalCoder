@@ -8,7 +8,7 @@ color:rgb(38, 180, 9);
 nav.navbar ul.nav li {
     display: inline-block;
     border-radius: 4px;
-    background-color: rgb(236, 199, 188);
+    background-color: rgba(224, 214, 211, 0.747);
     border: 0;
     color: #FFFFFF;
     text-align: center;

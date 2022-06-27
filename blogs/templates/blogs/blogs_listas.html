@@ -1,4 +1,4 @@
-{% load bootstrap5 %}
+{% load django_bootstrap5 %}
 
 {# Load CSS and JavaScript #}
 {% bootstrap_css %}
@@ -17,7 +17,7 @@
           <img
             src="https://i.postimg.cc/Z5FDD5vZ/pngwing-com.png"
             height="80"
-            alt="MDB Logo"
+            alt=""
             loading="lazy"
             style="margin-top: -10px;"
           />
@@ -54,7 +54,11 @@
           <a class="nav-link d-sm-flex align-items-sm-center">
             <img>
             <strong class="d-none d-sm-block ms-1">{{user.username}}</strong> </a> 
-            <img height="50" src="{{ user.avatar_set.first.image.url }}" />
+            {% if user.avatar_set.first.image.url %}
+            <img class="card-img" height="50" src="{{ user.avatar_set.first.image.url }}" />
+            {% else %}
+            <img class="card-img" height="50" width="50" src="{% static 'blogs/css/default.png' %}" />
+            {% endif %}
           </a>
         </li>
         <li class="nav-item me-3 me-lg-1">
