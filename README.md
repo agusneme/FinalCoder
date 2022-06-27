@@ -1,17 +1,15 @@
-# finalCoder
 Entrega final realizada para el curso de Python en la plataforma de CoderHouse. Realizado por Agustin Fassetta, Agustin Pelle y Agustin Neme.
 # FinalCoder
 # Primer entrega del proyecto final:
 
-Esta es la primera entrega realizada para la plataforma CoderHouse en su curso de Python, este codigo contiene:
+Esta es la entrega final realizada para la plataforma CoderHouse en su curso de Python, este codigo contiene:
 
 -Vistas
-
 -Formularios
-
 -Templates
-
 -Modelos
+
+
 
 ** IMPORTANTE: Este archivo fue realizado en python 3.9.10 y Django 4.0.4**
 
