@@ -30,7 +30,7 @@
 {% if user.avatar_set.first.image.url %}
 <img class="card-img" height="50" src="{{ user.avatar_set.first.image.url }}" />
 {% else %}
-<img class="card-img" height="" width="" src="{% static 'blogs/css/default.png' %}" />
+<img class="card-img" height="-800" width="100" src="{% static 'blogs/css/default.png' %}" />
 {% endif %}
 </body>
 

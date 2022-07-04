@@ -21,12 +21,13 @@ nav.navbar ul.nav li {
 
 }
 
-
 footer {
-    margin-top:50px;
-    width:1%;
-    height:200px;
-}
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    }
+
 
 *{box-sizing:border-box;}
 
