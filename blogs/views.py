@@ -128,7 +128,7 @@ class BlogLogin(LoginView):
     next_page = reverse_lazy("blogs_listas")
 
 
-class BlogLogout(LoginRequiredMixin, LogoutView):
+class BlogLogout(LogoutView):
     template_name = 'blogs/blogs_desconectar.html'
     
 

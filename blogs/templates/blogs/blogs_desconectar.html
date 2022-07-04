@@ -1,48 +1,11 @@
-{% load bootstrap5 %}
-
-{# Load CSS and JavaScript #}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
-
-{# Display django.contrib.messages as Bootstrap alerts #}
-{% bootstrap_messages %}
+{% extends "blogs/front.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link type="text/css" rel="stylesheet" href="{% static 'blogs/css/listas.css' %}">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid justify-content-between">
-      <div class="d-flex">
-      </div>
-      <table border="0" align="center"> 
-      <a class="navbar-brand me-2 mb-1 d-flex">
-        <img
-            src="https://i.postimg.cc/Z5FDD5vZ/pngwing-com.png"
-            height="80"
-            alt=""
-            loading="lazy"
-            style="margin-top: -10px;"
-          />
-      </a>
-      </table>
-  
-      <ul class="navbar-nav flex-row">
-        <li class="nav-item me-3 me-lg-1">
-        </li>
-        <li class="nav-item me-3 me-lg-1">
-          <a class="nav-link" href="">
-            <span><i class="fas fa-plus-circle fa-lg"></i></span>
-          </a>
-        </li>
-    </div>
-  </nav>
-</head>
+
 {% block cuerpo %}
 <body>
     <div class="container">
         <ul class="nav justify-content-center ">
-        <div style="width:1000px; margin: 248px auto;">
+        <div style="width:1000px; margin: 276.5px auto;">
         <div class="starter-template">
         <center>
 
@@ -68,14 +31,5 @@
   window.location.href = '/';
   }, 2000); //    2000 MS = 2 SEGUNDOS
 </script>
-<footer><footer class="bg-dark text-center text-white">
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(171, 185, 192, 0.603);">
-    © 2022 Copyright:
-    <a class="text-white"</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-</html>
-</body>
+
 {% endblock %}
